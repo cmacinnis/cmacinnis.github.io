@@ -67,24 +67,7 @@
 
 	}
 
-	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-}
 
 	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 		-moz-animation: none !important;
@@ -865,6 +848,7 @@
 		z-index: 2;
 	}
 
+
 		#wrapper > * {
 			z-index: 1;
 		}
@@ -876,6 +860,10 @@
 		
 		#arbus #wrapper:before {
 			display: none;
+		}
+
+		#arbus #wrapper {
+			min-height: none;
 		}
 
 		@media screen and (max-width: 360px) {
@@ -917,4 +905,36 @@
 	border-right-color: #c2e1f5;
 	border-width: 36px;
 	margin-top: -36px;
+}
+
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+@media screen and (max-width: 480px) {
+	#arbus h1 {
+		font-size: 2.0rem;
+		font-weight: bold;
+		width: 80vw;
+	}
+
+	#arbus .col-3 {
+		margin: 0.5rem 5vw;
+		width: 30vw;
+	}
 }
