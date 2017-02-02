@@ -926,6 +926,17 @@
   animation-duration:1s;
 }
 
+	#report {
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 1em;
+	}
+
+	#report p {
+		text-transform: initial;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
 @media screen and (max-width: 480px) {
 	#arbus h1 {
 		font-size: 2.0rem;
@@ -937,4 +948,23 @@
 		margin: 0.5rem 5vw;
 		width: 30vw;
 	}
+
+}
+
+.reflection {
+	background-color: rgba(255,165,150,0.35);
+}
+
+#ref-title {
+	text-align: center;
+	background-color: navajowhite;
+}
+
+#arbus-title {
+	text-align: center;
+}
+
+#ref-list {
+	text-align: center;
+	margin-left: 25%;
 }
