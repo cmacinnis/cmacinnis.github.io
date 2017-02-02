@@ -937,20 +937,6 @@
 		padding-right: 5%;
 	}
 
-@media screen and (max-width: 480px) {
-	#arbus h1 {
-		font-size: 2.0rem;
-		font-weight: bold;
-		width: 80vw;
-	}
-
-	#arbus .col-3 {
-		margin: 0.5rem 5vw;
-		width: 30vw;
-	}
-
-}
-
 .reflection {
 	background-color: rgba(255,165,150,0.35);
 }
@@ -966,5 +952,22 @@
 
 #ref-list {
 	text-align: center;
-	margin-left: 25%;
 }
+
+@media screen and (max-width: 480px) {
+	#arbus h1 {
+		font-size: 2.0rem;
+		font-weight: bold;
+	}
+
+	#arbus .col-3 {
+		margin: 0.5rem 5vw;
+		width: 30vw;
+	}
+
+	#ref-list {
+		margin: initial;
+	}
+
+}
+
