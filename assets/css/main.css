@@ -971,3 +971,26 @@
 
 }
 
+#refimg {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0.1em 0 0 0.2em blanchedalmond;
+}
+
+figcaption {
+	text-transform: initial;
+    font-size: small;
+    text-align: center;
+}
+
+figure {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#sources {
+	text-transform: initial;
+    font-size: smaller;
+    margin-left: 5%;
+    font-style: italic;
+}
