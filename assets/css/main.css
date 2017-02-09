@@ -999,3 +999,8 @@ figure {
 	margin-right: 5%;
 	color: #989494;
 }
+
+strong i {
+	font-style: italic;
+	font-weight: bold;
+	color: tomato;
