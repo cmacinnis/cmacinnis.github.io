@@ -1004,3 +1004,9 @@ strong i {
 	font-style: italic;
 	font-weight: bold;
 	color: tomato;
+}
+
+.cv {
+	height: 250px;
+	width: 300px;
+}
